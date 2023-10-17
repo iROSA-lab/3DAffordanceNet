@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from time import time
 import numpy as np
-from .pointnet2_ops.pointnet2.pointnet2_utils import gather_operation, grouping_operation, furthest_point_sample, ball_query, three_nn, three_interpolate
+# from .pointnet2_ops.pointnet2.pointnet2_utils import gather_operation, grouping_operation, furthest_point_sample, ball_query, three_nn, three_interpolate
 
 
 def timeit(tag, t):

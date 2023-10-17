@@ -46,7 +46,7 @@ training_cfg = dict(
 )
 
 data = dict(
-    data_root='PATH/TO/DATASET',
+    data_root='data_root',
     category=['grasp', 'contain', 'lift', 'openable', 'layable', 'sittable',
               'support', 'wrap_grasp', 'pourable', 'move', 'displaY', 'pushable', 'pull',
               'listen', 'wear', 'press', 'cut', 'stab']
