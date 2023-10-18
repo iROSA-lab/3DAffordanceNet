@@ -26,7 +26,7 @@ def semi_points_transform(points):
 
 
 class AffordNetDataset(Dataset):
-    def __init__(self, data_dir, split, partial=False, rotate='None', semi=False):
+    def __init__(self, data_dir=None, split='train', partial=False, rotate='None', semi=False):
         super().__init__()
         self.data_dir = data_dir
         self.split = split
@@ -34,10 +34,10 @@ class AffordNetDataset(Dataset):
         self.partial = partial
         self.rotate = rotate
         self.semi = semi
+        if data_dir is not None:
+            self.load_data()
 
-        self.load_data()
-
-        self.affordance = self.all_data[0]["affordance"]
+            self.affordance = self.all_data[0]["affordance"]
 
         return
 
