@@ -14,7 +14,6 @@ class_to_shapenet_dir = { # shapenet_dir is based on sysnet_id
  'cabinet': '02933112',
  'can': '02747177',
  'camera': '02942699',
- 'hat': '02954340',
  'car': '02958343',
  'chair': '03001627',
  'clock': '03046257',
@@ -55,7 +54,9 @@ class_to_shapenet_dir = { # shapenet_dir is based on sysnet_id
  'watercraft': '04530566',
  'washer': '04554684',
  'boat': '02858304',
- 'cellphone': '02992529'
+ 'cellphone': '02992529',
+ 'hat': '02954340', # renamed from 'cap'
+ 'scissors': '9999999999999' # no scissors in shapenet, try partnet
  }
 
 shapeid_to_partnet_dir = { # partnet_dir is based on anno_id
